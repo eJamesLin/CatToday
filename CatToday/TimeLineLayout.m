@@ -60,7 +60,7 @@
 		if (ABS(itemHorizontalCenter - horizontalCenter) < ABS(offsetAdjustment)) {
 			offsetAdjustment = itemHorizontalCenter - horizontalCenter;
 
-			layoutAttributes.alpha = 0;
+			//layoutAttributes.alpha = 0;
 		}
 	}
 	return CGPointMake(proposedContentOffset.x + offsetAdjustment, proposedContentOffset.y);
