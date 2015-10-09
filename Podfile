@@ -10,9 +10,10 @@ inhibit_all_warnings!
 
 link_with 'CatToday' , 'CatToday Widget'
 
-pod 'Parse', '1.7.5.3'
-pod 'ParseCrashReporting', '1.7.5.3'
-pod 'ParseUI', :git => 'https://github.com/eJamesLin/ParseUI-iOS.git', :branch => 'feature/NoLayoutSubViewsInPFCollectionViewCell' 
+pod 'Parse'
+pod 'ParseCrashReporting'
+#pod 'ParseUI', :git => 'https://github.com/eJamesLin/ParseUI-iOS.git', :branch => 'feature/NoLayoutSubViewsInPFCollectionViewCell' 
+pod 'ParseUI', :path => '../../ParseUI-iOS'
 pod 'MBProgressHUD'
 pod 'Masonry'
 pod 'GoogleAnalytics-iOS-SDK','3.0.3c'
