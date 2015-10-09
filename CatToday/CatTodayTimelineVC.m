@@ -14,7 +14,7 @@
 #import "Constants.h"
 #import "MenuImage.h"
 #import "AppDelegate.h"
-#import "Azure.h"
+//#import "Azure.h"
 
 //pods
 #import <Parse/Parse.h>
@@ -26,7 +26,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
 
 @interface CatTodayTimelineVC ()
 @property (nonatomic, strong) UILabel *networkView;
-@property (nonatomic, strong) Azure *azure;
+//@property (nonatomic, strong) Azure *azure;
 @end
 
 @implementation CatTodayTimelineVC
@@ -63,14 +63,6 @@ static NSString *cellIdentifier = @"cellIdentifier";
 {
 	[super viewWillAppear:animated];
 	[self jumpToPhoto];
-}
-
-- (Azure *)azure
-{
-	if (!_azure) {
-		_azure = [[Azure alloc] init];
-	}
-	return _azure;
 }
 
 - (void)uiSetting
@@ -195,6 +187,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
 		cell.imageView.file = [object objectForKey:CAT_CLASS_KEY_PHOTO];
 
 		cell.faceView.frame = CGRectZero;
+        /*
 		if (![self.azure faceRectForID:object.objectId]) {
 			[self.azure setRect:NSStringFromCGRect(CGRectZero) withID:object.objectId];
 
@@ -209,16 +202,17 @@ static NSString *cellIdentifier = @"cellIdentifier";
 				}
 			}];
 		}
+        */
 
 		// PFQTVC will take care of asynchronously downloading files, but will only load them when the tableview is not moving. If the data is there, let's load it right away.
 		if ([cell.imageView.file isDataAvailable]) {
 			[cell.imageView loadInBackground:^(UIImage *image, NSError *error) {
 
-				cell.imageView.file = nil;
-				if (![[self.azure faceRectForID:object.objectId] isEqualToString:NSStringFromCGRect(CGRectZero)]) {
-					cell.imageView.image = [self imageByDrawingRectOnImage:image
-																rectString:[self.azure faceRectForID:object.objectId]];
-				}
+//				cell.imageView.file = nil;
+//				if (![[self.azure faceRectForID:object.objectId] isEqualToString:NSStringFromCGRect(CGRectZero)]) {
+//					cell.imageView.image = [self imageByDrawingRectOnImage:image
+//																rectString:[self.azure faceRectForID:object.objectId]];
+//				}
 				/*
 				NSLog(@"%s %f %f", __PRETTY_FUNCTION__, image.size.width, image.size.height);
 				NSLog(@"%s %f %f", __PRETTY_FUNCTION__, cell.imageView.frame.size.width, cell.imageView.frame.size.height);

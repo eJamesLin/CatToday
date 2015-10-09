@@ -35,7 +35,6 @@
 		DB57581D1B889906006AD7FC /* WhiteDecorationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB57581C1B889906006AD7FC /* WhiteDecorationCell.m */; };
 		DB5758201B88A11A006AD7FC /* WhiteNaviVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB57581F1B88A11A006AD7FC /* WhiteNaviVC.m */; };
 		DB5758231B88B29C006AD7FC /* MenuImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5758221B88B29C006AD7FC /* MenuImage.m */; };
-		DBA400611B89390E00DF5131 /* Azure.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA400601B89390E00DF5131 /* Azure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,8 +114,6 @@
 		DB5758211B88B29C006AD7FC /* MenuImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuImage.h; sourceTree = "<group>"; };
 		DB5758221B88B29C006AD7FC /* MenuImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuImage.m; sourceTree = "<group>"; };
 		DBA4005E1B88E38200DF5131 /* CatToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CatToday.entitlements; sourceTree = "<group>"; };
-		DBA4005F1B89390E00DF5131 /* Azure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Azure.h; sourceTree = "<group>"; };
-		DBA400601B89390E00DF5131 /* Azure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Azure.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +176,6 @@
 			children = (
 				C8CE43C11B883AA100FE88BD /* AppDelegate.h */,
 				C8CE43C21B883AA100FE88BD /* AppDelegate.m */,
-				DBA4005F1B89390E00DF5131 /* Azure.h */,
-				DBA400601B89390E00DF5131 /* Azure.m */,
 				DB3E906D1B886373005E9FA5 /* Common */,
 				DB5758171B8898AD006AD7FC /* CollectionView */,
 				C8CE43C71B883AA100FE88BD /* Main.storyboard */,
@@ -523,7 +518,6 @@
 				DB3E906C1B88636E005E9FA5 /* UIColor+CatToday.m in Sources */,
 				DB57581D1B889906006AD7FC /* WhiteDecorationCell.m in Sources */,
 				DB3E90641B88522A005E9FA5 /* CatCollectionViewCell.m in Sources */,
-				DBA400611B89390E00DF5131 /* Azure.m in Sources */,
 				DB5758231B88B29C006AD7FC /* MenuImage.m in Sources */,
 				DB5758201B88A11A006AD7FC /* WhiteNaviVC.m in Sources */,
 			);
